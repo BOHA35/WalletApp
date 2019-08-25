@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DC01A730231082A300E16EEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A72F231082A300E16EEB /* AppDelegate.swift */; };
-		DC01A732231082A300E16EEB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A731231082A300E16EEB /* FirstViewController.swift */; };
-		DC01A734231082A300E16EEB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A733231082A300E16EEB /* SecondViewController.swift */; };
+		DC01A732231082A300E16EEB /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A731231082A300E16EEB /* SpendingViewController.swift */; };
+		DC01A734231082A300E16EEB /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A733231082A300E16EEB /* IncomeViewController.swift */; };
 		DC01A737231082A300E16EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC01A735231082A300E16EEB /* Main.storyboard */; };
 		DC01A739231082A500E16EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC01A738231082A500E16EEB /* Assets.xcassets */; };
 		DC01A73C231082A500E16EEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC01A73A231082A500E16EEB /* LaunchScreen.storyboard */; };
 		DC01A747231082A500E16EEB /* WalletAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A746231082A500E16EEB /* WalletAppTests.swift */; };
 		DC01A752231082A500E16EEB /* WalletAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A751231082A500E16EEB /* WalletAppUITests.swift */; };
+		DC1CB06D231175DB002010BD /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB06C231175DB002010BD /* ExpenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,8 @@
 /* Begin PBXFileReference section */
 		DC01A72C231082A300E16EEB /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC01A72F231082A300E16EEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC01A731231082A300E16EEB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DC01A733231082A300E16EEB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DC01A731231082A300E16EEB /* SpendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
+		DC01A733231082A300E16EEB /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		DC01A736231082A300E16EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC01A738231082A500E16EEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC01A73B231082A500E16EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		DC01A74D231082A500E16EEB /* WalletAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC01A751231082A500E16EEB /* WalletAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppUITests.swift; sourceTree = "<group>"; };
 		DC01A753231082A500E16EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC1CB06C231175DB002010BD /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				DC01A72F231082A300E16EEB /* AppDelegate.swift */,
-				DC01A731231082A300E16EEB /* FirstViewController.swift */,
-				DC01A733231082A300E16EEB /* SecondViewController.swift */,
-				DC01A735231082A300E16EEB /* Main.storyboard */,
+				DC1CB06A231173FC002010BD /* Controllers */,
+				DC1CB06B2311740B002010BD /* View */,
 				DC01A738231082A500E16EEB /* Assets.xcassets */,
-				DC01A73A231082A500E16EEB /* LaunchScreen.storyboard */,
 				DC01A73D231082A500E16EEB /* Info.plist */,
 			);
 			path = WalletApp;
@@ -126,6 +126,25 @@
 				DC01A753231082A500E16EEB /* Info.plist */,
 			);
 			path = WalletAppUITests;
+			sourceTree = "<group>";
+		};
+		DC1CB06A231173FC002010BD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC01A731231082A300E16EEB /* SpendingViewController.swift */,
+				DC01A733231082A300E16EEB /* IncomeViewController.swift */,
+				DC1CB06C231175DB002010BD /* ExpenseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DC1CB06B2311740B002010BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC01A735231082A300E16EEB /* Main.storyboard */,
+				DC01A73A231082A500E16EEB /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC01A734231082A300E16EEB /* SecondViewController.swift in Sources */,
+				DC01A734231082A300E16EEB /* IncomeViewController.swift in Sources */,
+				DC1CB06D231175DB002010BD /* ExpenseViewController.swift in Sources */,
 				DC01A730231082A300E16EEB /* AppDelegate.swift in Sources */,
-				DC01A732231082A300E16EEB /* FirstViewController.swift in Sources */,
+				DC01A732231082A300E16EEB /* SpendingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
