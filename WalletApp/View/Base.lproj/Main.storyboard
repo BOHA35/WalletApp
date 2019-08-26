@@ -47,101 +47,22 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Income-->
-        <scene sceneID="deV-mf-Rr7">
+        <!--Expense-->
+        <scene sceneID="Cq0-b2-DZ7">
             <objects>
-                <tableViewController id="ZPo-wV-bTv" customClass="IncomeViewController" customModule="WalletApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d2N-kE-we5">
+                <viewController id="Bgg-ia-IvW" customClass="ExpenseViewConroller" customModule="WalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sba-VM-4yj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="incomeCell" rowHeight="36" id="d2E-bd-liF">
-                                <rect key="frame" x="0.0" y="28" width="414" height="36"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d2E-bd-liF" id="hUm-Fx-WiP">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="35.666666666666664"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ZPo-wV-bTv" id="WwI-1K-J3a"/>
-                            <outlet property="delegate" destination="ZPo-wV-bTv" id="vbg-3Z-qGb"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Income" id="aIg-AB-wre">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6ht-3m-Ixs"/>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lOj-GC-Wk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1707" y="408"/>
-        </scene>
-        <!--income-->
-        <scene sceneID="2gr-5n-AVr">
-            <objects>
-                <navigationController id="gFd-RW-Hk8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="income" image="second" id="1Oj-WE-kZq"/>
+                        <viewLayoutGuide key="safeArea" id="bvQ-n8-ymZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Expense" id="y6H-Gy-U6Y"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SS9-h2-xa2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ZPo-wV-bTv" kind="relationship" relationship="rootViewController" id="vRT-a1-5pH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dc8-kQ-ZUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bb-kV-MPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="409"/>
-        </scene>
-        <!--Expense-->
-        <scene sceneID="1Ya-6M-fR3">
-            <objects>
-                <tableViewController id="GH4-ro-tbE" customClass="ExpenseViewConroller" customModule="WalletApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OG4-Kb-ETb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fPr-xd-Vfl">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fPr-xd-Vfl" id="jGI-9U-8JR">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="GH4-ro-tbE" id="tiY-qx-0MX"/>
-                            <outlet property="delegate" destination="GH4-ro-tbE" id="VPM-v9-R4v"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Expense" id="wFr-qI-6Bg"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kdW-Vf-eRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1665" y="1130"/>
-        </scene>
-        <!--Expense-->
-        <scene sceneID="i59-fS-aLb">
-            <objects>
-                <navigationController id="Re2-fa-AmT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Expense" id="dl1-TT-Mgx"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tfp-uF-FdA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="GH4-ro-tbE" kind="relationship" relationship="rootViewController" id="PbN-Ip-jDx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VMq-4k-RuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749" y="1130"/>
+            <point key="canvasLocation" x="1709" y="75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -154,17 +75,60 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="gFd-RW-Hk8" kind="relationship" relationship="viewControllers" id="JX9-ea-pRU"/>
-                        <segue destination="Re2-fa-AmT" kind="relationship" relationship="viewControllers" id="nS2-MK-NkL"/>
+                        <segue destination="CZx-yt-XwJ" kind="relationship" relationship="viewControllers" id="j6s-4o-ycK"/>
+                        <segue destination="Bgg-ia-IvW" kind="relationship" relationship="viewControllers" id="I9c-j4-y0N"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Income-->
+        <scene sceneID="tbp-01-2ic">
+            <objects>
+                <viewController id="CZx-yt-XwJ" customClass="IncomeViewController" customModule="WalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hXL-SQ-sHb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScY-5m-uNX">
+                                <rect key="frame" x="131" y="97" width="153" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Income" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-tA-zER">
+                                <rect key="frame" x="20" y="213" width="236" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onu-os-sfS">
+                                <rect key="frame" x="287" y="213" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="incomeSaved:" destination="CZx-yt-XwJ" eventType="touchUpInside" id="bFj-1D-vey"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zhc-5g-yOM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Income" id="g5f-5y-Emr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="incomeTextField" destination="xDI-tA-zER" id="Ky3-eP-75h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x74-dt-UXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="370.98214285714283"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
 </document>

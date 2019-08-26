@@ -7,31 +7,35 @@
 //
 
 import UIKit
+import RealmSwift
 
-class IncomeViewController: UITableViewController {
+class IncomeViewController: UIViewController {
     
-    var incomeArray = ["20000", "200000"]
-
+    let realm = try! Realm()
+    
+    @IBOutlet weak var incomeTextField: UITextField!
+    
+    @IBAction func incomeSaved(_ sender: Any) {
+        
+        save(balance: Double(incomeTextField.text!))
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    // MARK - TableView Datasource Methods
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return incomeArray.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "incomeCell", for: indexPath)
-        
-        cell.textLabel?.text = incomeArray[indexPath.row]
-        
-        return cell
-    }
+    func save(balance: Income) {
+        do {
+            try realm.write {
+                realm.add(balance)
+            }
+        } catch {
+            print("Error saving balance \(error)")
+        }
 
+}
 
 }
 
