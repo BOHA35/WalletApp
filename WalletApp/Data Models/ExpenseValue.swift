@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import RealmSwift
 
-class Income: Object {
+class ExpenseValue {
     
-    @objc dynamic var balance: Double = 0.0
+     var value = 0.0
     
 }
 

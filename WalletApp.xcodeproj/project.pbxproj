@@ -10,15 +10,14 @@
 		B163C5946DB7959909FE65EA /* Pods_WalletAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79965B1392525AA2ED4CB568 /* Pods_WalletAppUITests.framework */; };
 		C38CB74CB22ED0BFE76869D2 /* Pods_WalletApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83D099A7A8FBEE79CF8F2B0 /* Pods_WalletApp.framework */; };
 		DC01A730231082A300E16EEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A72F231082A300E16EEB /* AppDelegate.swift */; };
-		DC01A732231082A300E16EEB /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A731231082A300E16EEB /* SpendingViewController.swift */; };
-		DC01A734231082A300E16EEB /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A733231082A300E16EEB /* IncomeViewController.swift */; };
 		DC01A737231082A300E16EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC01A735231082A300E16EEB /* Main.storyboard */; };
 		DC01A739231082A500E16EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC01A738231082A500E16EEB /* Assets.xcassets */; };
 		DC01A73C231082A500E16EEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC01A73A231082A500E16EEB /* LaunchScreen.storyboard */; };
 		DC01A747231082A500E16EEB /* WalletAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A746231082A500E16EEB /* WalletAppTests.swift */; };
 		DC01A752231082A500E16EEB /* WalletAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A751231082A500E16EEB /* WalletAppUITests.swift */; };
 		DC1CB06D231175DB002010BD /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB06C231175DB002010BD /* ExpenseViewController.swift */; };
-		DCB46A0F2312D64E00748F8E /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB46A0E2312D64E00748F8E /* Income.swift */; };
+		DCB46A0F2312D64E00748F8E /* ExpenseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB46A0E2312D64E00748F8E /* ExpenseValue.swift */; };
+		DCC7542A23146CDE00F8D5FC /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7542923146CDE00F8D5FC /* WalletViewController.swift */; };
 		FA85DB28EA34AD00AA6D02EF /* Pods_WalletAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10B12D9A458254DA2DA6876 /* Pods_WalletAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +49,6 @@
 		D83D099A7A8FBEE79CF8F2B0 /* Pods_WalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC01A72C231082A300E16EEB /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC01A72F231082A300E16EEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC01A731231082A300E16EEB /* SpendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
-		DC01A733231082A300E16EEB /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		DC01A736231082A300E16EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC01A738231082A500E16EEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC01A73B231082A500E16EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,7 +60,8 @@
 		DC01A751231082A500E16EEB /* WalletAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppUITests.swift; sourceTree = "<group>"; };
 		DC01A753231082A500E16EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC1CB06C231175DB002010BD /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
-		DCB46A0E2312D64E00748F8E /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		DCB46A0E2312D64E00748F8E /* ExpenseValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseValue.swift; sourceTree = "<group>"; };
+		DCC7542923146CDE00F8D5FC /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		F10B12D9A458254DA2DA6876 /* Pods_WalletAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,7 +144,7 @@
 				DC01A72F231082A300E16EEB /* AppDelegate.swift */,
 				DCB46A0D2312D5EF00748F8E /* Data Models */,
 				DC1CB06A231173FC002010BD /* Controllers */,
-				DC1CB06B2311740B002010BD /* View */,
+				DC1CB06B2311740B002010BD /* Views */,
 				DC01A738231082A500E16EEB /* Assets.xcassets */,
 				DC01A73D231082A500E16EEB /* Info.plist */,
 			);
@@ -174,26 +172,25 @@
 		DC1CB06A231173FC002010BD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DC01A731231082A300E16EEB /* SpendingViewController.swift */,
-				DC01A733231082A300E16EEB /* IncomeViewController.swift */,
+				DCC7542923146CDE00F8D5FC /* WalletViewController.swift */,
 				DC1CB06C231175DB002010BD /* ExpenseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		DC1CB06B2311740B002010BD /* View */ = {
+		DC1CB06B2311740B002010BD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				DC01A735231082A300E16EEB /* Main.storyboard */,
 				DC01A73A231082A500E16EEB /* LaunchScreen.storyboard */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DCB46A0D2312D5EF00748F8E /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				DCB46A0E2312D64E00748F8E /* Income.swift */,
+				DCB46A0E2312D64E00748F8E /* ExpenseValue.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -426,11 +423,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC01A734231082A300E16EEB /* IncomeViewController.swift in Sources */,
 				DC1CB06D231175DB002010BD /* ExpenseViewController.swift in Sources */,
+				DCC7542A23146CDE00F8D5FC /* WalletViewController.swift in Sources */,
 				DC01A730231082A300E16EEB /* AppDelegate.swift in Sources */,
-				DCB46A0F2312D64E00748F8E /* Income.swift in Sources */,
-				DC01A732231082A300E16EEB /* SpendingViewController.swift in Sources */,
+				DCB46A0F2312D64E00748F8E /* ExpenseValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

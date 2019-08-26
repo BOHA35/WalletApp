@@ -10,6 +10,10 @@ import UIKit
 
 class ExpenseViewConroller: UIViewController {
     
+    @IBOutlet weak var expenseTextField: UITextField!
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
