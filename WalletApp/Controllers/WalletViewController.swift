@@ -10,6 +10,8 @@ import UIKit
 
 class WalletViewController: UIViewController {
     
+    var expenseValue: ExpenseValue
+    
     @IBOutlet weak var walletTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var remainingValue: UILabel!
@@ -17,13 +19,35 @@ class WalletViewController: UIViewController {
     @IBAction func calculateButtonPressed(_ sender: Any) {
     }
     
-    
+    required init?(coder aDecoder: NSCoder) {
+        expenseValue = ExpenseValue()
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
     
+    
+}
+
+
+extension WalletViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Int(expenseValue.value)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseItem", for: indexPath)
+        
+        return cell
+        
+    }
     
     
 }
