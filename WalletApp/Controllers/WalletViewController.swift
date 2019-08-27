@@ -32,6 +32,14 @@ class WalletViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "AddExpense" {
+            if let expenseViewController = segue.destination as? ExpenseViewConroller {
+                expenseViewController.delegate = self as? ExpenseViewControllerDelegate
+            }
+        }
+    }
+    
     
 }
 
@@ -51,3 +59,5 @@ extension WalletViewController: UITableViewDelegate, UITableViewDataSource {
     
     
 }
+
+
