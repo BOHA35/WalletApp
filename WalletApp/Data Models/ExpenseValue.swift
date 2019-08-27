@@ -10,7 +10,8 @@ import Foundation
 
 class ExpenseValue {
     
-     var value = 0.0
+    var value = 0.0
+    var array: [ExpenseValue] = []
     
 }
 
