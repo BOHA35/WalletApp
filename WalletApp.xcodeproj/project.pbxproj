@@ -19,6 +19,7 @@
 		DC3F6EAB2315DC140007BC59 /* ExpenseItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F6EAA2315DC140007BC59 /* ExpenseItemTableViewCell.swift */; };
 		DCB46A0F2312D64E00748F8E /* ExpenseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB46A0E2312D64E00748F8E /* ExpenseValue.swift */; };
 		DCC7542A23146CDE00F8D5FC /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7542923146CDE00F8D5FC /* WalletViewController.swift */; };
+		DCD7CF09231688CF0092F2EF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD7CF08231688CF0092F2EF /* ResultViewController.swift */; };
 		FA85DB28EA34AD00AA6D02EF /* Pods_WalletAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10B12D9A458254DA2DA6876 /* Pods_WalletAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		DC3F6EAA2315DC140007BC59 /* ExpenseItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItemTableViewCell.swift; sourceTree = "<group>"; };
 		DCB46A0E2312D64E00748F8E /* ExpenseValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseValue.swift; sourceTree = "<group>"; };
 		DCC7542923146CDE00F8D5FC /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		DCD7CF08231688CF0092F2EF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F10B12D9A458254DA2DA6876 /* Pods_WalletAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,7 +178,8 @@
 			children = (
 				DCC7542923146CDE00F8D5FC /* WalletViewController.swift */,
 				DC1CB06C231175DB002010BD /* ExpenseViewController.swift */,
-				DC3F6EAA2315DC140007BC59 /* ExpenseItemTableViewCell.swift */,
+				DCD7CF08231688CF0092F2EF /* ResultViewController.swift */,
+				DCD7CF0A231689D00092F2EF /* TableViewCellController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +199,14 @@
 				DCB46A0E2312D64E00748F8E /* ExpenseValue.swift */,
 			);
 			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		DCD7CF0A231689D00092F2EF /* TableViewCellController */ = {
+			isa = PBXGroup;
+			children = (
+				DC3F6EAA2315DC140007BC59 /* ExpenseItemTableViewCell.swift */,
+			);
+			path = TableViewCellController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +442,7 @@
 				DCC7542A23146CDE00F8D5FC /* WalletViewController.swift in Sources */,
 				DC01A730231082A300E16EEB /* AppDelegate.swift in Sources */,
 				DCB46A0F2312D64E00748F8E /* ExpenseValue.swift in Sources */,
+				DCD7CF09231688CF0092F2EF /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

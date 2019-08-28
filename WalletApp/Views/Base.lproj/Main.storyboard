@@ -55,6 +55,7 @@
                                 <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="calculateButtonPressed:" destination="yd5-Zs-DAv" eventType="touchUpInside" id="fon-hZ-KSe"/>
+                                    <segue destination="1i3-1g-81U" kind="show" identifier="Calculate" id="w3N-Uy-hyK"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DIm-XD-Jq5">
@@ -161,6 +162,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIC-CZ-NAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1973.913043478261" y="-95.089285714285708"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="gjh-ee-tjI">
+            <objects>
+                <viewController id="1i3-1g-81U" customClass="ResultViewController" customModule="WalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0D0-3e-LOX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wxF-e3-tDM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8m-NT-6gU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1974" y="646"/>
         </scene>
     </scenes>
 </document>
